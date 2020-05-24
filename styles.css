@@ -19,8 +19,16 @@
 }
 
 .cover_img{
-  opacity: 0.5;
-  height: auto;
+  offset: 25%;
+  height: device.height;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 100;
+  left: 0;
+  background-color: #AEB6BF;
+  overflow-x: hidden;
+
 
 }
 @media only screen and (max-width: 600px) {

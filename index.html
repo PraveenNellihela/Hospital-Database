@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
 
   <body>
     <!-- right side -->
-    <div class="jumbotron offset-3" style="margin-bottom: 0px; margin-top:81px">
+    <div class="jumbotron offset-3" style="margin-bottom: 0px; padding-top:81px">
       <h1 class="display-4">Patient Management System</h1>
-      <p class="lead">Welcome to the patient management system by the Department of</p>
+      <p class="lead">Welcome to the patient management system by the Rheumatology and Rahabilitation Clinic
+      at the Teaching Hospital, Anuradhapura</p>
       <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+      <p>Log in to start managing patient data or sign up as an admin user using the left side menu.</p>
+      <p><em>Visit our FaceBook page below for updates</em></p>
       <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-outline-info btn-lg" href="https://www.facebook.com/RheumatologyClinicTHA/" role="button"><i class="fa fa-facebook-official p-1 pr-3"></i>Learn more</a>
       </p>
     </div>
-    <div class="container-fluid offset-3 p-0 m-0 cover_img">
-      <img src="img/cover.jpg"  alt="">
+    <div class="container-fluid cover_img offset-3 p-0 m-0 ">
+      <img class="img-fluid" src="img/cover.jpg" alt="">
+
     </div>
 
 
@@ -44,8 +48,8 @@
         <p>Welcome!</p>
       </div>
       <!-- Sign in -->
-      <div class="container p-3 mb-2 ml-2">
-        <button class="btn btn-primary shadow-sm btn-lg" type="button" data-toggle="collapse" data-target="#Sign_in" aria-expanded="false" aria-controls="Sign_in">
+      <div class="container pt-3 mb-2">
+        <button class="btn btn-primary shadow-sm btn-lg btn-block" type="button" data-toggle="collapse" data-target="#Sign_in" aria-expanded="false" aria-controls="Sign_in">
           Sign in
         </button>
         <div class="collapse" id="Sign_in">
@@ -62,12 +66,13 @@
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
                 <label class="form-check-label" for="exampleCheck1" style="color:white">Remember me</label>
               </div>
-              <button type="submit" class="btn btn-outline-success">Login</button>
+              <a href="login.html" class="btn btn-outline-success">Login</a>
+
           </div>
       </div>
       <!-- Sign up -->
-      <div class="container p-3 mb-2 ml-2">
-        <button class="btn btn-primary shadow-sm btn-lg" type="button" data-toggle="collapse" data-target="#Sign_up" aria-expanded="false" aria-controls="Sign_up">
+      <div class="container pt-3 mb-2">
+        <button class="btn btn-secondary shadow-sm btn-lg btn-block" type="button" data-toggle="collapse" data-target="#Sign_up" aria-expanded="false" aria-controls="Sign_up">
           Sign up
         </button>
         <div class="collapse" id="Sign_up">
