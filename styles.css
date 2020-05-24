@@ -18,25 +18,30 @@
   padding-top: 20px;
 }
 
-.cover_img{
-  offset: 25%;
-  height: device.height;
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  top: 100;
-  left: 0;
-  background-color: #AEB6BF;
-  overflow-x: hidden;
+.jumbotron{
+  height: 40vh;
+}
 
+.bg_cover{
+  height: 60vh;
+  width: auto;
+  background-attachment: fixed;
+  overflow:hidden;
+  opacity:0.95
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   /* For mobile phones: */
   .white{
     font-size: 20px;
   }
   .sidenav{
     width: 100%;
+  }
+  .jumbotron{
+    height: 80vh;
+  }
+  .bg_cover{
+    height: 20vh;
   }
 }
