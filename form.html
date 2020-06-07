@@ -9,7 +9,31 @@
   </head>
   <body>
     <div class="container pt-4">
-      <form>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Patient Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#patient_history.html" role="tab" aria-controls="profile" aria-selected="false">Patient History</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Investigations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Management</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        </div>
+
+
+      <form id="patient_details" class="pt-3">
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="Hospital_No">Hospital Number</label>
@@ -114,13 +138,15 @@
               <input type="number" class="form-control" id="bmi" placeholder="BMI" >
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-8">
-              <label class="contol-label" for="blood_pressure">Blood pressure</label>
-              <input class="form-control" type="number" id="blood_pressure" placeholder="Enter blood pressure (mm/Hg)">
 
+          <div class="form-group row">
+            <label class="col-md-2 col-form-label" for="blood_pressure">Blood pressure</label>
+            <div class="col-md-5">
+              <input class="form-control" type="number" id="systolic_pressure" placeholder="Systolic (mm/Hg)">
             </div>
-
+            <div class="col-md-5">
+              <input class="form-control" type="number" id="diastolic_pressure" placeholder="Diastolic (mm/Hg)">
+            </div>
           </div>
 
 
