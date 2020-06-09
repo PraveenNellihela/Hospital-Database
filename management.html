@@ -8,13 +8,17 @@
     <title>Patient History</title>
   </head>
   <body>
-    <div class="container p-3">
-      <div class="form-group">
+
+    <div class="container p-3 row">
+      <div class="col-12">
+
+
+      <div class="form-group ">
         <h3 class="pb-1">Pain relief</h3>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="PCM_checkbox">
-          <label class="form-check-label col-md-6" for="PCM_dosage">
-            PCM <select class="form-control col-md-4" id="PCM_dosage">
+          <label class="form-check-label col-12" for="PCM_dosage">
+            PCM <select class="form-control col-md-6" id="PCM_dosage">
               <option>500 bd</option>
               <option>500 tds</option>
               <option>1 gram bd</option>
@@ -24,8 +28,8 @@
         </div>
         <div class="form-check pt-2">
           <input class="form-check-input" type="checkbox" id="diclofenac_checkbox">
-          <label class="form-check-label col-md-6" for="diclofenac_dosage">
-            Diclofenac <select class="form-control col-md-4" id="diclofenac_dosage">
+          <label class="form-check-label col-12" for="diclofenac_dosage">
+            Diclofenac <select class="form-control col-md-6" id="diclofenac_dosage">
               <option>50 bd</option>
               <option>50 tds</option>
 
@@ -34,8 +38,8 @@
         </div>
         <div class="form-check pt-2">
           <input class="form-check-input" type="checkbox" id="ibuprofen_checkbox">
-          <label class="form-check-label col-md-6" for="ibuprofen_dosage">
-            Ibuprofen <select class="form-control col-md-4" id="ibuprofen_dosage">
+          <label class="form-check-label col-12" for="ibuprofen_dosage">
+            Ibuprofen <select class="form-control col-md-6" id="ibuprofen_dosage">
               <option>200 bd</option>
               <option>400 bd</option>
               </select>
@@ -43,8 +47,8 @@
         </div>
         <div class="form-check pt-2 pb-4">
             <input class="form-check-input" type="checkbox" id="celecoxib_checkbox">
-            <label class="form-check-label col-md-6" for="celocoxib_dosage">
-              Celecoxib <select class="form-control col-md-4" id="celocoxib_dosage">
+            <label class="form-check-label col-12" for="celocoxib_dosage">
+              Celecoxib <select class="form-control col-md-6" id="celocoxib_dosage">
                 <option>100 bd</option>
                 <option>200 bd</option>
                 </select>
@@ -55,8 +59,8 @@
         <h3 class="pb-1">DMARDS</h3>
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="methotrexate_checkbox">
-          <label class="form-check-label col-md-6" for="methotrexate_dosage">
-            Methotrexate on Sundays <select class="form-control col-md-4" id="methotrexate_dosage">
+          <label class="form-check-label col-12" for="methotrexate_dosage">
+            Methotrexate on Sundays <select class="form-control col-md-6" id="methotrexate_dosage">
               <option>5 mg</option>
               <option>7.5 mg</option>
               <option>10 mg</option>
@@ -69,8 +73,8 @@
         </div>
         <div class="form-check pt-2">
           <input class="form-check-input" type="checkbox" id="folic_acid_checkbox">
-          <label class="form-check-label col-md-6" for="folic_acid_dosage">
-            Folic Acid on Wednesdays <select class="form-control col-md-4" id="folic_acid_dosage">
+          <label class="form-check-label col-12" for="folic_acid_dosage">
+            Folic Acid on Wednesdays <select class="form-control col-md-6" id="folic_acid_dosage">
               <option>5 mg</option>
 
             </select>
@@ -78,8 +82,8 @@
         </div>
         <div class="form-check pt-2">
           <input class="form-check-input" type="checkbox" id="sulfasalazine_checkbox">
-          <label class="form-check-label col-md-6" for="sulfasalazine_dosage">
-            Sulfasalazine <select class="form-control col-md-4" id="sulfasalazine_dosage">
+          <label class="form-check-label col-12" for="sulfasalazine_dosage">
+            Sulfasalazine <select class="form-control col-md-6" id="sulfasalazine_dosage">
               <option>500mg daily</option>
               <option>500 bd</option>
               <option>500 tds</option>
@@ -89,26 +93,76 @@
           </label>
         </div>
         <div class="form-check pt-2">
-            <input class="form-check-input" type="checkbox" id="leflunomide_nocte_checkbox">
-            <label class="form-check-label col-md-6" for="leflunomide_nocte_dosage">
-              Leflunomide nocte <select class="form-control col-md-4" id="leflunomide_nocte_dosage">
-                <option>10 mg</option>
-                <option>20 mg</option>
-                </select>
-            </label>
+          <input class="form-check-input" type="checkbox" id="leflunomide_nocte_checkbox">
+          <label class="form-check-label col-12" for="leflunomide_nocte_dosage">
+            Leflunomide nocte <select class="form-control col-md-6" id="leflunomide_nocte_dosage">
+              <option>10 mg</option>
+              <option>20 mg</option>
+              </select>
+          </label>
+        </div>
+        <div class="form-check pt-2">
+          <input class="form-check-input" type="checkbox" id="azathioprine_daily_checkbox">
+          <label class="form-check-label col-12" for="azathioprine_daily_dosage">
+            Azathioprine daily <select class="form-control col-md-6" id="azathioprine_daily_dosage">
+              <option>50</option>
+              <option>75</option>
+              <option>100</option>
+              <option>125</option>
+              <option>150</option>
+              </select>
+          </label>
+        </div>
+        <div class="form-check pt-2">
+          <input class="form-check-input" type="checkbox" id="hydroxychloroquine_checkbox">
+          <label class="form-check-label col-12" for="hydroxychloroquine_dosage">
+            Hydroxychloroquine <select class="form-control col-md-6" id="hydroxychloroquine_dosage">
+              <option>200mg bd Monday to Friday</option>
+              <option>200mg daily all 7 days</option>
+              <option>200mg daily Monday to Friday</option>
+              <option>200mg bd all seven days</option>
+              </select>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="prednisolone_checkbox">
+          <label class="form-check-label col-12" for="prednisolone_dosage">
+            Prednisolone<select class="form-control col-md-6" id="prednisolone_dosage">
+              <option>5 mg mane</option>
+              <option>7.5 mg mane</option>
+              <option>10 mg mane</option>
+              <option>12.5 mg mane</option>
+              <option>15 mg mane</option>
+              <option>17.5 mg mane</option>
+              <option>20 mg mane</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="methylprednisolone_checkbox">
+          <label class="form-check-label col-12" for="methylprednisolone_dosage">
+            Methylprednisolone<select class="form-control col-md-6" id="methylprednisolone_dosage">
+              <option>2 mg mane</option>
+              <option>4 mg mane</option>
+              <option>8 mg mane</option>
+              <option>16 mg mane</option>
+            </select>
+          </label>
         </div>
 
-
+        <h3 class="pb-1 pt-3">Other</h3>
+        <textarea class="form-control col-6" id="history" placeholder="Enter other medication/dosages here"></textarea>
       </div>
 
-
-
-
-
-
-
-
-
+      </div>
+      <div class="container col-6">
+      <div class="container col-12">
+        <div class="form-group">
+          <label for="history">Referrals:</label>
+          <textarea class="form-control" id="referrals" placeholder="Enter referral details here"></textarea>
+        </div>
+      </div>
+    </div>
     </div>
   </body>
 </html>
