@@ -28,10 +28,10 @@
     <div class="container pt-2">
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#patient_details">Patient details</a>
+          <a class="nav-link active" data-toggle="tab" href="#patient_details">Patient Details</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#patient_history">Patient history</a>
+          <a class="nav-link" data-toggle="tab" href="#patient_history">Patient History/Examination</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="tab" href="#patient_investigations">Investigations</a>
@@ -43,10 +43,10 @@
     </div>
 
 
-    <div class="tab-content">
+    <div class="tab-content bg-light">
       <!-- patient details -->
       <div id="patient_details" class="tab-pane fade show in active">
-        <div class="container p-3" >
+        <div class="container p-2" >
           <form class="pt-3">
           <div class="form-row">
             <div class="form-group col-md-6">
@@ -163,6 +163,20 @@
               </div>
             </div>
 
+            <div class="container" style="padding:15px">
+            </div>
+
+            <div class="form-group row pb-4">
+              <label class="col-md-2 col-form-label" for="other_details">Other</label>
+              <div class="col-md-5">
+                <textarea class="form-control" id="other_details" rows="3" cols="80" placeholder="Other details"></textarea>
+              </div>
+              <div class="col-md-5">
+                <button type="button" class="btn btn-primary btn-lg btn-block">Enter Investigation reports</button>
+              </div>
+            </div>
+
+
 
           </form>
         </div>
@@ -170,7 +184,7 @@
 
       <!-- patient history -->
       <div id="patient_history" class="tab-pane fade">
-          <div class="container p-3">
+          <div class="container p-2">
             <form class="pt-3">
               <div class="form-group">
                 <label for="presenting_complaint">Presenting Complaint</label>
@@ -267,7 +281,7 @@
 
               <div class="form-group">
                 <label for="family_social_history">Family/Social history</label>
-                <textarea type="text" class="form-control" id="family_social_history" placeholder="Enter allergy details here"></textarea>
+                <textarea type="text" class="form-control" id="family_social_history" placeholder="Enter details here"></textarea>
               </div>
               </textarea>
 
@@ -302,6 +316,11 @@
 
               </div>
 
+              <div class="form-group">
+                <label for="patient_history_other_details">Other</label>
+                <textarea class="form-control" id="patient_history_other_details" rows="3" cols="80" placeholder="Other details"></textarea>
+              </div>
+
 
 
             </form>
@@ -312,10 +331,10 @@
 
       <!-- patient investigations -->
       <div id="patient_investigations" class="tab-pane fade">
-        <div class="container p-3">
+        <div class="container pt-3" style="height:345px;">                                                               <!-- jumbotron row -->
           <div class="row">
             <div class="col-4">
-              <div class="jumbotron jumbotron-fluid">
+              <div class="jumbotron jumbotron-fluid mb-4" style="height:320px;">
                 <div class="container">
                   <h1 class="display-5 pb-1">Request Investigation</h1>
                   <p class="lead pt-5">
@@ -328,7 +347,7 @@
             </div>
 
             <div class="col-4">
-              <div class="jumbotron jumbotron-fluid">
+              <div class="jumbotron jumbotron-fluid mb-4" style="height:320px;">
                 <div class="container">
                   <h1 class="display-5">Enter Investigation reports</h1>
                   <p class="lead pt-2">
@@ -341,7 +360,7 @@
             </div>
 
             <div class="col-4">
-              <div class="jumbotron jumbotron-fluid">
+              <div class="jumbotron jumbotron-fluid mb-4" style="height:320px;">
                 <div class="container">
                   <h1 class="display-5 pb-2">Search previous records</h1>
                   <p class="lead pt-5">
@@ -353,40 +372,120 @@
             </div>
 
           </div>
+        </div>
 
-          <div class="row pl-3 pr-3 pt-2" id="viewfield">
-            <div class="collapse" id="request_reports">
-              <div class="card card-body">
-                <ul>
-                  <li>FBC</li>
-                  <li>AST/ALT</li>
-                  <li>LFT</li>
-                  <li>Serum Albumin</li>
-                  <li>Serum Total Protein</li>
-                  <li>RFT</li>
-                  <li>Serum creatinine</li>
-                  <li>Blood urea</li>
-                  <li>ESR</li>
-                  <li>CRP</li>
-                  <li>Serum electrolyte (Na, K)</li>
-                </ul>
 
-              </div>
+        <div class="collapse" id="request_reports">
+          <div class="container pt-0 mt-0 pb-5">
+            <div class="card card-body"  id="viewfield">
+              <h3>Select the required tests to be requested</h3>
+              <form class="pl-4">
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="FBC">
+                      <label class="form-check-label" for="FBC">
+                        FBC
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="AST_ALT">
+                      <label class="form-check-label" for="AST_ALT">
+                        AST/ALT
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="LFT">
+                      <label class="form-check-label" for="LFT">
+                        LFT
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="serum_albumin">
+                      <label class="form-check-label" for="serum_albumin">
+                        Serum Albumin
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="serum_total_protein">
+                      <label class="form-check-label" for="serum_total_protein">
+                        Serum Total Protein
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="RFT">
+                      <label class="form-check-label" for="RFT">
+                        RFT
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="serum_creatinine">
+                      <label class="form-check-label" for="serum_creatinine">
+                        Serum creatinine
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="blood_urea">
+                      <label class="form-check-label" for="blood_urea">
+                        Blood urea
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="AST_ALT">
+                      <label class="form-check-label" for="gridCheck1">
+                        AST/ALT
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="ESR">
+                      <label class="form-check-label" for="ESR">
+                        ESR
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="CRP">
+                      <label class="form-check-label" for="CRP">
+                        CRP
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <input class="form-check-input" type="checkbox" id="serum_electrolyte">
+                      <label class="form-check-label" for="serum_electrolyte">
+                        Serum electrolyte (Na, K)
+                      </label>
+                    </div>
+
+                    <div class="form-group">
+                      <button type="button" class="btn btn-success btn-lg" name="button">Request selected tests</button>
+                    </div>
+                  </form>
             </div>
+          </div>
+        </div>
 
-            <div class="collapse" id="enter_reports">
-              <div class="card card-body">
-                
-
-              </div>
+        <div class="collapse" id="enter_reports">
+          <div class="card card-body">
 
 
           </div>
 
+
         </div>
 
+
+
+
       </div>
-      </div>
+
       <!-- patient management -->
       <div id="patient_management" class="tab-pane fade">
         <div class="container p-3">
@@ -443,7 +542,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <div class="form-check pt-2">
+              <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="ibuprofen_checkbox">
                 <label class="form-check-label col-md-6" for="ibuprofen_dosage">
                   Ibuprofen <select class="form-control" id="ibuprofen_dosage">
