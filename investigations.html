@@ -8,5 +8,217 @@
     <title>Patient History</title>
   </head>
   <body>
+    <div class="card card-body">
+      <div class="container pt-0 mt-0 pb-5">
+        <div class="card card-body"  id="viewfield">
+          <h3>Enter investigation data</h3>
+
+          <!-- section 1 FBC -->
+
+          <div class="card card-body">
+            <h5>1. FBC</h5>
+            <form class="" action="index.html" method="post">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="hemoglobin">Hemoglobin</label>
+                    <input type="number" class="form-control" id="hemoglobin" placeholder="Hemoglobin (g/dL)">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="platelet">Platelet</label>
+                    <input type="number" class="form-control" id="platelet" placeholder="Platelet (10⁹/dL)">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="wbc_total">WBC Total</label>
+                    <input type="number" class="form-control" id="wbc_total" placeholder="WBC Total (10⁹/dL)">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="red_blood_cells">Red Bool Cells</label>
+                    <input type="number" class="form-control" id="red_blood_cells" placeholder="Red blood cells (10¹²/dL)">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="mean_cell_volume">Mean Cell Volume</label>
+                    <input type="number" class="form-control" id="mean_cell_volume" placeholder="Mean cell volume (fl)">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="haematocrit">Haematocrit</label>
+                    <input type="number" class="form-control" id="haematocrit" placeholder="Haematocrit (L/L %)">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="mean_cell_haemoglobin">Mean Cell Haemoglobin</label>
+                    <input type="number" class="form-control" id="mean_cell_haemoglobin" placeholder="Mean cell Haemoglobin (pg)">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="m_c_h_concentration">M.C.H Concentration</label>
+                    <input type="number" class="form-control" id="m_c_h_concentration" placeholder="M.C.H Concentration (g/dL)">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="red_cell_distribution_width">Red Cell Distribution Width</label>
+                    <input type="number" class="form-control" id="red_cell_distribution_width" placeholder="Red Cell Distribution Width (%)">
+                  </div>
+                </div>
+              </div>
+
+              <h3>
+                <small class="text-muted"><u>Differential Count</u></small>
+              </h3>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="neutrophils">Neutrophils</label>
+                    <input type="number" class="form-control" id="neutrophils" placeholder="Neutrophils (%)">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="lymphocytes">Lymphocytes</label>
+                    <input type="number" class="form-control" id="lymphocytes" placeholder="Lymphocytes (%)">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="monocytes">Monocytes</label>
+                    <input type="number" class="form-control" id="monocytes" placeholder="Monocytes (%)">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="eosinophils">Eosinophils</label>
+                    <input type="number" class="form-control" id="eosinophils" placeholder="Eosinophils (%)">
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-group">
+                    <label for="basophils">Basophils</label>
+                    <input type="number" class="form-control" id="basophils" placeholder="Basophils (%)">
+                  </div>
+                </div>
+              </div>
+
+            </form>
+
+          </div>
+
+          <div class="pb-2"></div>
+
+          <!-- section 2 LFT -->
+          <div class="card card-body">
+            <h3>2. LFT</h3>
+
+            <form class="" action="index.html" method="post">
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="ALT_SGPT">ALT (S.G.P.T)</label>
+                    <input type="number" class="form-control" id="ALT_SGPT" placeholder="ALT (S.G.P.T) (U/L)">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    <label for="AST">AST (S.G.O.T)</label>
+                    <input type="number" class="form-control" id="AST" placeholder="AST (S.G.O.T) (U/L)">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="total_protein">Total Protein</label>
+                    <input type="number" class="form-control" id="total_protein" placeholder="Total Protein (g/dL)">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    <label for="albumin">Albumin</label>
+                    <input type="number" class="form-control" id="albumin" placeholder="Albumin (g/dL)">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="globulin">Globulin</label>
+                    <input type="number" class="form-control" id="globulin" placeholder="Globulin (g/dL)">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    <label for="AG_Ratio">A/G Ratio</label>
+                    <input type="number" class="form-control" id="AG_Ratio" placeholder="A/G Ratio">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="bilirubin">Bilirubin Total</label>
+                    <input type="number" class="form-control" id="bilirubin" placeholder="Bilirubin Total (mg/dL)">
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div class="form-group">
+                    <label for="alk_phosphatase">ALK. Phosphatase</label>
+                    <input type="number" class="form-control" id="alk_phosphatase" placeholder="ALK. Phosphatase (U/L)">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="gamma_gt">Gamma-GT</label>
+                    <input type="number" class="form-control" id="gamma_gt" placeholder="Gamma-GT (U/L)">
+                  </div>
+                </div>
+          </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
   </body>
 </html>
