@@ -366,9 +366,67 @@
               </div>
 
               <div class="collapse" id="screening_test">
-                <div class="card card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                <div class="form-group row">
+                  <div class="col-md-6">
+                    <label class="control-label" for="date">Date done</label>
+                    <input class="form-control" id="date" name="date" type="date"/>
+                  </div>
                 </div>
+
+                <form class="" action="index.html" method="post">
+                  <div class="form-group row">
+                    <div class="col-4">
+                      <label for="2d_echo">i. 2D echo</label>
+                      <select id="2d_echo" class="form-control">
+                        <option selected>Select</option>
+                        <option>Normal</option>
+                        <option>Abnormal</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 pt-2">
+                      <textarea id="2d_echo_findings" class="form-control" rows="2" placeholder="Findings"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-4">
+                      <label for="hiv_screening">ii. HIV Screening</label>
+                      <select id="hiv_screening" class="form-control">
+                        <option selected>Select</option>
+                        <option>Positive</option>
+                        <option>Negative</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <label for="tb_screening">iii. Tb Screening</label>
+                      <select id="2d_echo" class="form-control">
+                        <option selected>Select</option>
+                        <option>Positive</option>
+                        <option>Negative</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-4">
+                      <label for="hpeb">iv. HPE B</label>
+                      <select id="hpeb" class="form-control">
+                        <option selected>Select</option>
+                        <option>Positive</option>
+                        <option>Negative</option>
+                      </select>
+                    </div>
+                    <div class="col-4">
+                      <label for="hpec">v. HPE C</label>
+                      <select id="hpec" class="form-control">
+                        <option selected>Select</option>
+                        <option>Positive</option>
+                        <option>Negative</option>
+                      </select>
+                    </div>
+                  </div>
+
+                </form>
               </div>
 
 
