@@ -476,13 +476,12 @@
 
         <!-- Enter investigation reports collapse -->
         <div class="collapse" id="enter_reports">
-          <div class="card card-body bg-light">
+          <div class="card card-body">
             <div class="container pt-0 mt-0 pb-5">
               <div class="card card-body"  id="viewfield">
                 <h3>Enter investigation data</h3>
 
                 <!-- section 1 FBC -->
-
                 <div class="card card-body">
                   <h5>1. FBC</h5>
                   <form class="" action="index.html" method="post">
@@ -595,7 +594,6 @@
                   </form>
 
                 </div>
-
                 <div class="pb-2"></div>
 
                 <!-- section 2 LFT -->
@@ -680,14 +678,281 @@
                       </div>
                     </div>
                   </form>
-              </div>
+                </div>
+                <div class="pb-2"></div>
+
+                <!-- section 3 and 4 -->
+                <!-- section 3 CRP -->
+                <div class="row">
+                  <div class="col-6">
+                    <form class="" action="index.html" method="post">
+                      <div class="card card-body">
+                        <div class="form-group">
+                          <label for="crp"><h3>3. CRP</h3></label>
+                          <input type="number" class="form-control" id="crp" placeholder="CRP (mg/dL)">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- section 4 ESR -->
+                  <div class="col-6">
+                    <form class="" action="index.html" method="post">
+                      <div class="card card-body">
+                        <div class="form-group">
+                          <label for="esr"><h3>4. ESR</h3></label>
+                          <input type="number" class="form-control" id="esr" placeholder="ESR (mm/hr)">
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="pb-2"></div>
+
+                <!-- section 5 RST -->
+                <div class="card card-body">
+                  <form class="" action="index.html" method="post">
+                    <h3>5. RFT</h3>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="s_creatinine">S. Creatinine</label>
+                        <input type="number" class="form-control" id="s_creatinine" placeholder="S. Creatinine">
+                      </div>
+                      <div class="col-md-3">
+                        <label for="s_creatinine_unit"></label>
+                        <select id="s_creatinine_unit" class="form-control">
+                          <option selected>Choose units</option>
+                          <option>mg/dL</option>
+                          <option>μmol/L</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="bloo_urea">Blood Urea</label>
+                        <input type="number" class="form-control" id="bloo_urea" placeholder="Blood Urea">
+                      </div>
+                      <div class="col-md-3 pt-2">
+                        <label for="bloo_urea"></label>
+                        <select id="blood_urea_unit" class="form-control">
+                          <option selected>Choose units</option>
+                          <option>mg/dL</option>
+                          <option>mmol/L</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+                <div class="pb-2"></div>
+
+                <!-- section 6 Fasting blood sugar -->
+                <div class="card card-body">
+                  <form class="" action="index.html" method="post">
+                    <h3>6. Fasting Blood Sugar</h3>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+
+                        <input type="number" class="form-control" id="fasting_blood_sugar" placeholder="Fasting Blood Sugar">
+                      </div>
+                      <div class="col-md-3">
+
+                        <select id="fasting_blood_sugar_unit" class="form-control">
+                          <option selected>Choose units</option>
+                          <option>mg/dL</option>
+                          <option>mmol/L</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+
+                </div>
+                <div class="pb-2"></div>
+
+                <!-- section 7 Serum electrolytes -->
+                <div class="card card-body">
+                  <form class="" action="index.html" method="post">
+                    <h3>7. Serum Electrolytes</h3>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <label for="sodium">Na⁺</label>
+                        <input type="number" class="form-control" id="sodium" placeholder="Na⁺ (mmol/L)">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="potasium">K⁺</label>
+                        <input type="number" class="form-control" id="potasium" placeholder="K⁺ (mmol/L)">
+                      </div>
+
+                    </div>
+
+                  </form>
+
+                </div>
+                <div class="pb-2"></div>
+
+                <!-- section 8 Serum Calcium -->
+                <div class="card card-body">
+                  <form class="" action="index.html" method="post">
+                    <h3>8. Serum Calcium</h3>
+                    <div class="form-group row">
+                      <div class="col-md-6">
+                        <input type="number" class="form-control" id="s_creatinine" placeholder="Serum Calcium">
+                      </div>
+                      <div class="col-md-3 ">
+                        <select id="serum_calcium_unit" class="form-control">
+                          <option selected>Choose units</option>
+                          <option>mg/dL</option>
+                          <option>mmol/L</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+
+
+
+
+                </div>
+                <div class="pb-2"></div>
+
+                <!-- section 9 Screening test -->
+                <div class="card card-body">
+                  <form class="" action="index.html" method="post">
+
+                    <div class="row">
+                      <div class="col-6">
+                        <h3>9. Screening Test for Biologics</h3>
+                      </div>
+
+                    <div class="col-4">
+                      <!-- Rectangular switch -->
+                      <label class="switch">
+                        <input type="checkbox" data-toggle="collapse" data-target="#screening_test" aria-expanded="true" aria-controls="screening_test">
+                        <span class="slider"></span>
+                      </label>
+                    </div>
+                    </div>
+
+                    <div class="collapse" id="screening_test">
+                      <div class="form-group row">
+                        <div class="col-md-6">
+                          <label class="control-label" for="date">Date done</label>
+                          <input class="form-control" id="date" name="date" type="date"/>
+                        </div>
+                      </div>
+
+                      <form class="" action="index.html" method="post">
+                        <div class="form-group row">
+                          <div class="col-4">
+                            <label for="2d_echo">i. 2D echo</label>
+                            <select id="2d_echo" class="form-control">
+                              <option selected>Select</option>
+                              <option>Normal</option>
+                              <option>Abnormal</option>
+                            </select>
+                          </div>
+                          <div class="col-md-6 pt-2">
+                            <textarea id="2d_echo_findings" class="form-control" rows="2" placeholder="Findings"></textarea>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <div class="col-4">
+                            <label for="hiv_screening">ii. HIV Screening</label>
+                            <select id="hiv_screening" class="form-control">
+                              <option selected>Select</option>
+                              <option>Positive</option>
+                              <option>Negative</option>
+                            </select>
+                          </div>
+                          <div class="col-4">
+                            <label for="tb_screening">iii. Tb Screening</label>
+                            <select id="2d_echo" class="form-control">
+                              <option selected>Select</option>
+                              <option>Positive</option>
+                              <option>Negative</option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <div class="form-group row">
+                          <div class="col-4">
+                            <label for="hpeb">iv. HPE B</label>
+                            <select id="hpeb" class="form-control">
+                              <option selected>Select</option>
+                              <option>Positive</option>
+                              <option>Negative</option>
+                            </select>
+                          </div>
+                          <div class="col-4">
+                            <label for="hpec">v. HPE C</label>
+                            <select id="hpec" class="form-control">
+                              <option selected>Select</option>
+                              <option>Positive</option>
+                              <option>Negative</option>
+                            </select>
+                          </div>
+                        </div>
+
+                      </form>
+                    </div>
+
+
+
+
+                  </form>
+
+
+
+
+                </div>
+                <div class="pb-2"></div>
+
+
+                <!-- section 10 upload images -->
+
+                <div class="card card-body">
+                  <form class="" action="index.html" method="post">
+                    <h3>Imaging studies</h3>
+                    <div class="row">
+                      <div class="col-9">
+                        <div class="row">
+                          <div class="col-3">
+                            <label for="xray">1. X-Ray</label>
+                          </div>
+                          <div class="col-9">
+                            <textarea name="xray" rows="1" placeholder="Enter findings here"></textarea>
+                          </div>
+                        </div>
+                      <div class="row">
+                        <div class="col-3">
+                          <label for="ct_details">2. CT</label>
+                        </div>
+                        <div class="col-9">
+                          <textarea name="ct_details" rows="1" placeholder="Enter findings here"></textarea>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-3">
+                      <button type="button" name="button">Upload Image</button>
+                    </div>
+
+                  </div>
+
+
+
+                  </form>
+
+
+
+
+                </div>
+
 
             </div>
           </div>
 
-
-
-        </div>
+          </div>
 
 
 
